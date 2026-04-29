@@ -1,6 +1,5 @@
 namespace SpaceBattle.Lib;
 
-
 public interface IMovingObject
 {
     NVector Position { get; set; }

@@ -13,4 +13,4 @@ public class RegisterGameCommand : ICommand
             (object[] args) => new Game()
         ).Execute();
     }
-}Pymupdf
+}

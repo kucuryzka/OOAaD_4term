@@ -2,8 +2,8 @@
 
 public class NVector
 {
-    public int[] coords { get; set; }
-    public int dim { get; set; }
+    public int[] coords { get; }
+    public int dim { get; }
 
     public NVector(int[] coords)
     {

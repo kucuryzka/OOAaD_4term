@@ -1,10 +1,10 @@
-﻿namespace SpaceBattle.Lib;
+﻿namespace Vector;
 
 
 public class NVector
 {
-    public int[] coords { get; set; }
-    public int dim { get; set; }
+    public int[] coords { get; }
+    public int dim { get; }
 
     public NVector(int[] coords)
     {
@@ -30,6 +30,8 @@ public class NVector
 
     public static bool operator ==(NVector a, NVector b)
     {
+        if (ReferenceEquals(a, b)) return true;
+        if (ReferenceEquals(a, null) || ReferenceEquals(b, null)) return false;
 
         if (a.dim != b.dim) return false;
         if (!a.coords.SequenceEqual(b.coords)) return false;
@@ -39,14 +41,8 @@ public class NVector
 
     public static bool operator !=(NVector a, NVector b)
     {
-
-        if (a.coords.SequenceEqual(b.coords)) return false;
-
-        return true;
+        return !(a == b);
     }
-
-
-
 
     public override bool Equals(object? obj)
     {

@@ -1,9 +1,10 @@
 using System;
 using System.Reflection;
 using Moq;
-using Vector;
+using SpaceBattle.Lib;
 
-namespace VectorTests;
+
+namespace SpaceBattle.Lib.Tests;
 
 public class VectorTests
 {

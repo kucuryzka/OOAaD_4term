@@ -1,5 +1,6 @@
 ﻿namespace SpaceBattle.Lib;
 
+
 public class NVector
 {
     public int[] coords { get; set; }
